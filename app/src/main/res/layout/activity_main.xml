@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lbl_tittle"
+        android:text="Silahkan Login"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-black"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edt_username"
+        android:layout_below="@id/lbl_tittle"
+        android:hint="username"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_below="@id/edt_username"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:text="LOGIN"
+        android:layout_margin="16dp"
+        android:layout_below="@id/edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_above="@id/lbl_tittle"
+        android:layout_centerHorizontal="true"
+        android:layout_width="149dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/icon_login" />
+
+</RelativeLayout>
