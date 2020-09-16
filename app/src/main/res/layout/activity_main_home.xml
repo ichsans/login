@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_Pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btnpindah"
+       >
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </androidx.viewpager.widget.ViewPager>
+
+    <Button
+        android:id="@+id/btnpindah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="pindah"
+        android:layout_above="@id/bottom_navigation"
+        />
+    <com.google.android.material.tabs.TabLayout
+
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:background="@color/design_default_color_error"
+        android:layout_height="wrap_content"
+        app:tabIndicatorColor="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+
+        />
+
+
+
+
+</RelativeLayout>
+</layout>
